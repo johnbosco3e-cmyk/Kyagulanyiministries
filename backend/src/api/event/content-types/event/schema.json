@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": { "singularName": "event", "pluralName": "events", "displayName": "Event", "description": "Upcoming and past organization events" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "title", "required": true },
+    "summary": { "type": "text" },
+    "content": { "type": "blocks" },
+    "startDate": { "type": "datetime", "required": true },
+    "endDate": { "type": "datetime" },
+    "venue": { "type": "string" },
+    "address": { "type": "text" },
+    "registrationUrl": { "type": "string" },
+    "contactEmail": { "type": "email" },
+    "featuredImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "featured": { "type": "boolean", "default": false },
+    "seo": { "type": "component", "component": "shared.seo", "repeatable": false }
+  }
+}

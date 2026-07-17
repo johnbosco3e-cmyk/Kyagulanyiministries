@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_members",
+  "info": { "singularName": "team-member", "pluralName": "team-members", "displayName": "Team Member", "description": "Leadership, staff, and volunteers" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "name", "required": true },
+    "role": { "type": "string", "required": true },
+    "memberType": { "type": "enumeration", "enum": ["leadership", "staff", "board", "volunteer"], "default": "staff" },
+    "biography": { "type": "blocks" },
+    "photo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "email": { "type": "email", "private": true },
+    "phone": { "type": "string", "private": true },
+    "displayOrder": { "type": "integer", "default": 0 },
+    "active": { "type": "boolean", "default": true }
+  }
+}

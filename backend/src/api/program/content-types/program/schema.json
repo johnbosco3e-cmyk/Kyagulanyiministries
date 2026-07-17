@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": { "singularName": "program", "pluralName": "programs", "displayName": "Program", "description": "Ministry programs and areas of impact" },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "slug": { "type": "uid", "targetField": "title", "required": true },
+    "summary": { "type": "text", "required": true },
+    "content": { "type": "blocks" },
+    "featuredImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "gallery": { "type": "media", "multiple": true, "allowedTypes": ["images", "videos"] },
+    "location": { "type": "string" },
+    "status": { "type": "enumeration", "enum": ["planned", "active", "completed"], "default": "active" },
+    "featured": { "type": "boolean", "default": false },
+    "seo": { "type": "component", "component": "shared.seo", "repeatable": false },
+    "stories": { "type": "relation", "relation": "oneToMany", "target": "api::story.story", "mappedBy": "program" },
+    "projects": { "type": "relation", "relation": "oneToMany", "target": "api::project.project", "mappedBy": "program" }
+  }
+}

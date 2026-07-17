@@ -1,0 +1,23 @@
+# Dependencies and generated output
+**/node_modules/
+**/.next/
+**/.next-stale-*/
+**/dist/
+**/build/
+**/.tmp/
+**/coverage/
+**/.cache/
+
+# Secrets and local environment
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local repositories and cloned framework source
+frontend/.git/
+strapi/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
