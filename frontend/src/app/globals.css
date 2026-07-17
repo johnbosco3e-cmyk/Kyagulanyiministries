@@ -39,10 +39,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 /* Keep legacy utility classes aligned with the Kyagulanyi Ministries logo palette. */
 .bg-\[\#071b33\] { background-color: var(--navy) !important; }
+.bg-\[\#06172b\] { background-color: var(--navy) !important; }
 .bg-\[\#0b2948\], .bg-\[\#0d2d4f\] { background-color: var(--navy-2) !important; }
 .text-\[\#071b33\], .text-\[\#142033\] { color: var(--ink) !important; }
 .text-\[\#d5a84b\], .text-\[\#e5c27d\], .text-\[\#e2bd70\] { color: var(--gold) !important; }
+.text-\[\#e6bf71\], .text-\[\#e4be70\], .text-\[\#e5c27d\], .text-\[\#a47b2b\], .text-\[\#8f6718\] { color: var(--gold) !important; }
 .bg-\[\#d5a84b\] { background-color: var(--gold) !important; }
+.border-\[\#d5a84b\] { border-color: var(--gold) !important; }
 .bg-\[\#f8f6f0\], .bg-\[\#f0eadc\] { background-color: var(--cream) !important; }
 .border-\[\#dce8df\] { border-radius: 1rem; overflow: hidden; }
 
