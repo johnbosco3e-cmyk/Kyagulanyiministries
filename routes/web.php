@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::view('/about', 'about');
 foreach (['about','events','news','media','volunteer','contact','prayer-request','donate','campaigns','partners','reports','transparency','privacy','terms'] as $page) {
     Route::view('/'.$page, 'page', ['page' => ucfirst($page)]);
 }
