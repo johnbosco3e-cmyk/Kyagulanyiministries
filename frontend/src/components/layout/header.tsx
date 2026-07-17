@@ -26,16 +26,16 @@ export function Header() {
         <div className="flex gap-6"><Link href="/prayer-request">Prayer Request</Link><Link href="/reports">Reports & Transparency</Link><span>Kampala, Uganda</span></div>
       </div>
     </div>
-    <header className={cn('sticky top-0 z-50 border-b transition-all duration-300', scrolled ? 'border-slate-200 bg-white/95 shadow-sm backdrop-blur-xl' : 'border-slate-200/70 bg-white')}>
+    <header className={cn('sticky top-0 z-50 border-b transition-all duration-300', scrolled ? 'border-white/10 bg-[#0d2133]/95 shadow-sm backdrop-blur-xl' : 'border-white/10 bg-[#0d2133]')}>
       <div className="container-site flex h-[78px] items-center justify-between gap-6">
         <Link href="/" className="focus-ring flex items-center gap-3 rounded-sm" aria-label="Kyagulanyi Ministries home">
           <span className="flex h-14 w-[145px] items-center sm:h-16 sm:w-[205px]"><Image src="/kyagulanyi-logo.webp" alt="Kyagulanyi Ministries" width={220} height={135} priority className="h-full w-full object-contain" /></span>
         </Link>
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Main navigation">
-          {links.map(([label, href]) => <Link key={href} href={href} className={cn('focus-ring rounded-sm py-3 text-[12px] font-bold transition hover:text-[#a87a20]', pathname === href ? 'text-[#a87a20]' : 'text-[#23344a]')}>{label}</Link>)}
+          {links.map(([label, href]) => <Link key={href} href={href} className={cn('focus-ring rounded-sm py-3 text-[12px] font-bold text-white transition hover:text-[#d9a928]', pathname === href ? 'text-[#d9a928]' : '')}>{label}</Link>)}
         </nav>
         <div className="flex items-center gap-2">
-          <button onClick={() => setSearchOpen(true)} aria-label="Search" className="focus-ring hidden h-10 w-10 place-items-center rounded-full text-xl text-[#071b33] hover:bg-slate-100 sm:grid"><HiOutlineMagnifyingGlass /></button>
+          <button onClick={() => setSearchOpen(true)} aria-label="Search" className="focus-ring hidden h-10 w-10 place-items-center rounded-full text-xl text-white hover:bg-white/10 sm:grid"><HiOutlineMagnifyingGlass /></button>
           <Link href="/donate" className="focus-ring donate-cta hidden gap-2 px-5 py-3 text-xs sm:flex"><HiOutlineHeart className="text-lg" /> DONATE NOW!</Link>
           <button onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Toggle menu" className="focus-ring grid h-11 w-11 place-items-center rounded-full border border-slate-200 text-2xl xl:hidden">{open ? <HiOutlineXMark /> : <HiOutlineBars3 />}</button>
         </div>
