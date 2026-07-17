@@ -1,23 +1,27 @@
-# Dependencies and generated output
-**/node_modules/
-**/.next/
-**/.next-stale-*/
-**/dist/
-**/build/
-**/.tmp/
-**/coverage/
-**/.cache/
-
-# Secrets and local environment
-**/.env
-**/.env.*
-!**/.env.example
-
-# Local repositories and cloned framework source
-frontend/.git/
-strapi/
-
-# Logs and OS files
 *.log
 .DS_Store
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.codex
+/.cursor/
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/fonts-manifest.dev.json
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+_ide_helper.php
+Homestead.json
+Homestead.yaml
 Thumbs.db
