@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 import { SearchPanel } from './search-panel';
 
 const links = [
-  ['About', '/about'], ['Programs', '/programs'], ['Projects', '/projects'], ['Sermons', '/sermons'],
+  ['About', '/about'], ['Programs', '/programs'], ['Projects', '/projects'],
   ['Events', '/events'], ['News', '/news'], ['Media', '/media'], ['Get Involved', '/volunteer'], ['Contact', '/contact'],
 ];
 
