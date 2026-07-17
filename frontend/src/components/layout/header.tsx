@@ -32,7 +32,7 @@ export function Header() {
           <span className="flex h-14 w-[145px] items-center sm:h-16 sm:w-[205px]"><Image src="/kyagulanyi-logo.webp" alt="Kyagulanyi Ministries" width={220} height={135} priority className="h-full w-full object-contain" /></span>
         </Link>
         <nav className="hidden items-center gap-5 xl:flex" aria-label="Main navigation">
-          {links.map(([label, href]) => <Link key={href} href={href} className={cn('focus-ring rounded-sm py-3 text-[12px] font-bold !text-white transition hover:!text-[#d9a928]', pathname === href ? '!text-[#d9a928]' : '')}>{label}</Link>)}
+          {links.map(([label, href]) => <Link key={href} href={href} className={cn('focus-ring rounded-sm py-3 text-[12px] font-bold !text-white transition hover:!text-[#3fad3c]', pathname === href ? '!text-[#3fad3c]' : '')}>{label}</Link>)}
         </nav>
         <div className="flex items-center gap-2">
           <button onClick={() => setSearchOpen(true)} aria-label="Search" className="focus-ring hidden h-10 w-10 place-items-center rounded-full text-xl text-white hover:bg-white/10 sm:grid"><HiOutlineMagnifyingGlass /></button>
