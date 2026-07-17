@@ -26,7 +26,7 @@ export function Header() {
         <div className="flex gap-6"><Link href="/prayer-request">Prayer Request</Link><Link href="/reports">Reports & Transparency</Link><span>Kampala, Uganda</span></div>
       </div>
     </div>
-    <header className={cn('sticky top-0 z-50 border-b transition-all duration-300', scrolled ? 'border-white/10 bg-[#0d2133]/95 shadow-sm backdrop-blur-xl' : 'border-white/10 bg-[#0d2133]')}>
+    <header className={cn('sticky top-0 z-50 border-b transition-all duration-300', scrolled ? 'border-white/10 bg-[#075b3a]/95 shadow-sm backdrop-blur-xl' : 'border-white/10 bg-[#075b3a]')}>
       <div className="container-site flex h-[78px] items-center justify-between gap-6">
         <Link href="/" className="focus-ring flex items-center gap-3 rounded-sm" aria-label="Kyagulanyi Ministries home">
           <span className="flex h-14 w-[145px] items-center sm:h-16 sm:w-[205px]"><Image src="/kyagulanyi-logo.webp" alt="Kyagulanyi Ministries" width={220} height={135} priority className="h-full w-full object-contain" /></span>
