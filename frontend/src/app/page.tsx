@@ -5,11 +5,13 @@ import { Reveal } from '@/components/ui/reveal';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { ImpactCounter } from '@/components/home/impact-counter';
 import { news, programs, projects, stats } from '@/lib/content';
+import heroBanner from '../pictures/herobanner.png';
 
 export default function Home() {
   return <main>
     <section className="relative min-h-[720px] overflow-hidden bg-[#071b33] text-white lg:min-h-[780px]">
-      <Image src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=2000&q=90" alt="Community members walking together" fill priority className="object-cover opacity-55" sizes="100vw" />
+      <Image src={heroBanner} alt="Kyagulanyi Ministries community" fill priority className="hidden object-cover opacity-55 lg:block" sizes="100vw" />
+      <Image src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=2000&q=90" alt="Community members walking together" fill priority className="block object-cover opacity-55 lg:hidden" sizes="100vw" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#06172b]/95 via-[#071b33]/65 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-[#071b33] to-transparent" />
       <div className="container-site relative flex min-h-[720px] items-center py-24 lg:min-h-[780px]">
