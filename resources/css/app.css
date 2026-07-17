@@ -10,3 +10,4 @@
  .site-footer a{display:block;color:#fff;text-decoration:none;margin:.35rem 0}.footer-logo{width:190px;height:auto;filter:brightness(0) invert(1)}.site-footer h6{color:#c7e67a;text-transform:uppercase;letter-spacing:.08em}.site-footer hr{border-color:#ffffff33}
  .footer-logo{filter:none!important;background:#fff;border-radius:.35rem;padding:.35rem;object-fit:contain}
  .display-subtitle{font-family:Georgia,serif;font-style:italic;color:#c7e67a;font-size:clamp(2rem,4vw,3.5rem)}
+ .campaign-section{background:#075b3a;padding:5rem 0}.campaign-section h2{font-size:clamp(2rem,4vw,3.5rem);font-weight:800}.campaign-section img{max-height:360px;object-fit:cover}.progress{height:8px;background:#ffffff33}
