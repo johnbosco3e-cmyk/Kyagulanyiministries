@@ -5,16 +5,15 @@ import { Reveal } from '@/components/ui/reveal';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { ImpactCounter } from '@/components/home/impact-counter';
 import { news, programs, projects, stats } from '@/lib/content';
-import heroBanner from '../pictures/herobanner.png';
 
 export default function Home() {
   return <main>
     <section className="relative min-h-[720px] overflow-hidden bg-[#071b33] text-white lg:min-h-[780px]">
-      <Image src={heroBanner} alt="Kyagulanyi Ministries community" fill priority className="hidden object-cover opacity-100 lg:block" sizes="100vw" />
       <Image src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=2000&q=90" alt="Community members walking together" fill priority className="block object-cover opacity-55 lg:hidden" sizes="100vw" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#06172b]/95 via-[#071b33]/65 to-transparent lg:hidden" />
       <div className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-[#071b33] to-transparent lg:hidden" />
       <div className="container-site relative flex min-h-[720px] items-center py-24 lg:min-h-[780px]">
+        <div className="relative z-10 hidden max-w-4xl lg:block"><p className="text-sm font-semibold uppercase tracking-[.35em] text-[#afd000]">Kyagulanyi Ministries</p><h1 className="mt-6 font-serif text-7xl font-semibold leading-[.95] text-white xl:text-[104px]">Saving lives.<br/><em className="font-normal text-[#afd000]">Planting hope.</em></h1><p className="mt-8 text-xl tracking-wide text-white/80">Building through faith.</p><div className="mt-10 h-px w-24 bg-[#afd000]"/></div>
         <Reveal className="max-w-3xl lg:hidden"><p className="mb-5 flex items-center gap-3 text-xs font-extrabold uppercase tracking-[.2em] text-[#f0ca7c]"><span className="h-px w-10 bg-[#d5a84b]"/> Serving rural Uganda since 2010</p><h1 className="display text-balance text-6xl font-semibold leading-[.96] sm:text-7xl lg:text-[92px]" style={{fontFamily:'var(--font-display)'}}>Transforming lives.<br/><em className="font-normal text-[#e2bd70]">Empowering the future.</em></h1><p className="mt-7 max-w-xl text-base leading-8 text-white/75 sm:text-lg">Through evangelism, clean water, education, community health, and sustainable economic development, we help communities move from survival to self-sufficiency.</p><div className="mt-9 flex flex-wrap gap-3"><Link href="/programs" className="focus-ring inline-flex items-center gap-3 rounded-full bg-[#d5a84b] px-7 py-4 text-sm font-extrabold text-[#071b33] transition hover:-translate-y-1 hover:bg-[#e5bd69]">Explore our work <HiArrowLongRight className="text-xl"/></Link><Link href="/about" className="focus-ring inline-flex items-center gap-3 rounded-full border border-white/30 bg-white/10 px-7 py-4 text-sm font-bold backdrop-blur-md hover:bg-white/20">Our story <HiOutlinePlay/></Link></div></Reveal>
       </div>
       <div className="absolute bottom-6 right-6 hidden rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur-xl"><p className="text-[10px] font-bold uppercase tracking-[.18em] text-white/50">This month</p><p className="mt-1 font-serif text-xl">1,240 families reached</p></div>
