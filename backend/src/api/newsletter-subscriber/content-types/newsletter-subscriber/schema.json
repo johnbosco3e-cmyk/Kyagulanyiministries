@@ -1,4 +1,0 @@
-{
-  "kind":"collectionType","collectionName":"newsletter_subscribers","info":{"singularName":"newsletter-subscriber","pluralName":"newsletter-subscribers","displayName":"Newsletter Subscriber"},"options":{"draftAndPublish":false},
-  "attributes":{"email":{"type":"email","required":true,"unique":true,"private":true},"name":{"type":"string","private":true},"active":{"type":"boolean","default":true,"private":true},"consentAt":{"type":"datetime","private":true},"source":{"type":"string","default":"website","private":true}}
-}

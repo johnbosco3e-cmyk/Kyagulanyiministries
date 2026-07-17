@@ -1,4 +1,0 @@
-import Image from 'next/image';
-export function PageHero({ eyebrow, title, text }: { eyebrow: string; title: string; text: string; image?: string }) {
-  return <section className="relative overflow-hidden bg-[#075b3a] py-16 text-white sm:py-20 lg:py-32"><Image src="/hero.jpg" fill alt="Kyagulanyi Ministries community" priority className="object-cover opacity-25" sizes="100vw"/><div className="absolute inset-0 bg-gradient-to-r from-[#075b3a] via-[#075b3a]/85 to-[#075b3a]/40"/><div className="container-site relative"><p className="eyebrow !text-[#c7e67a]">{eyebrow}</p><h1 className="display mt-4 max-w-4xl text-balance text-4xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl" style={{fontFamily:'var(--font-display)'}}>{title}</h1><p className="mt-5 max-w-2xl text-sm leading-7 text-white/70 sm:mt-6 sm:text-base sm:leading-8">{text}</p></div></section>;
-}

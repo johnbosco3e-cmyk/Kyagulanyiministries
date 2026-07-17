@@ -1,4 +1,0 @@
-{
-  "kind":"collectionType","collectionName":"sermons","info":{"singularName":"sermon","pluralName":"sermons","displayName":"Sermon"},"options":{"draftAndPublish":true},
-  "attributes":{"title":{"type":"string","required":true},"slug":{"type":"uid","targetField":"title","required":true},"speaker":{"type":"string","required":true},"series":{"type":"string"},"bibleReferences":{"type":"string"},"description":{"type":"blocks"},"videoUrl":{"type":"string"},"audio":{"type":"media","multiple":false,"allowedTypes":["audios"]},"notes":{"type":"media","multiple":false,"allowedTypes":["files"]},"featuredImage":{"type":"media","multiple":false,"allowedTypes":["images"]},"sermonDate":{"type":"date"},"featured":{"type":"boolean","default":false},"seo":{"type":"component","component":"shared.seo","repeatable":false}}
-}

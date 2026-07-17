@@ -1,4 +1,0 @@
-{
-  "kind":"collectionType","collectionName":"prayer_requests","info":{"singularName":"prayer-request","pluralName":"prayer-requests","displayName":"Prayer Request"},"options":{"draftAndPublish":false},
-  "attributes":{"name":{"type":"string","required":true,"private":true},"email":{"type":"email","private":true},"phone":{"type":"string","private":true},"message":{"type":"text","required":true,"private":true},"category":{"type":"enumeration","enum":["healing","family","guidance","provision","salvation","other"],"default":"other","private":true},"isPublic":{"type":"boolean","default":false,"private":true},"status":{"type":"enumeration","enum":["new","praying","follow-up","closed"],"default":"new","private":true}}
-}

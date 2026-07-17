@@ -1,4 +1,0 @@
-{
-  "kind":"collectionType","collectionName":"volunteers","info":{"singularName":"volunteer","pluralName":"volunteers","displayName":"Volunteer Application"},"options":{"draftAndPublish":false},
-  "attributes":{"name":{"type":"string","required":true,"private":true},"email":{"type":"email","required":true,"private":true},"phone":{"type":"string","private":true},"message":{"type":"text","required":true,"private":true},"skills":{"type":"text","private":true},"availability":{"type":"string","private":true},"interests":{"type":"text","private":true},"status":{"type":"enumeration","enum":["new","reviewing","approved","declined"],"default":"new","private":true}}
-}

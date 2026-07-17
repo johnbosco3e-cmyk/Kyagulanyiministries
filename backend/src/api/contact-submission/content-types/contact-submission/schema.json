@@ -1,4 +1,0 @@
-{
-  "kind":"collectionType","collectionName":"contact_submissions","info":{"singularName":"contact-submission","pluralName":"contact-submissions","displayName":"Contact Submission"},"options":{"draftAndPublish":false},
-  "attributes":{"name":{"type":"string","required":true,"private":true},"email":{"type":"email","required":true,"private":true},"phone":{"type":"string","private":true},"subject":{"type":"string","private":true},"message":{"type":"text","required":true,"private":true},"status":{"type":"enumeration","enum":["new","in-progress","resolved","spam"],"default":"new","private":true}}
-}
