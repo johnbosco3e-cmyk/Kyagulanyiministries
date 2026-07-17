@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --navy: #071b33;
-  --navy-2: #0d2d4f;
-  --gold: #d5a84b;
-  --gold-light: #f3dfae;
-  --cream: #f8f6f0;
-  --ink: #142033;
-  --muted: #657184;
-  --line: #e6e2d9;
+  --navy: #123b2a;
+  --navy-2: #1d5b3e;
+  --gold: #a8cf38;
+  --gold-light: #e4f2b4;
+  --cream: #f5f8ed;
+  --ink: #16261e;
+  --muted: #5e7065;
+  --line: #dfe8d8;
   --background: #ffffff;
   --foreground: var(--ink);
 }
@@ -34,8 +34,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .grain { position: relative; isolation: isolate; }
 .grain::after { content: ''; position: absolute; inset: 0; z-index: -1; opacity: .04; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E"); }
 .focus-ring:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
-.donate-cta { display: inline-flex; align-items: center; justify-content: center; background: #e0ad00; color: #071b33; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%); transition: background .2s ease, transform .2s ease; }
-.donate-cta:hover { background: #f0c21b; transform: translateY(-2px); }
+.donate-cta { display: inline-flex; align-items: center; justify-content: center; background: #a8cf38; color: #123b2a; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%); transition: background .2s ease, transform .2s ease; }
+.donate-cta:hover { background: #b9dc4b; transform: translateY(-2px); }
+
+/* Keep legacy utility classes aligned with the Kyagulanyi Ministries logo palette. */
+.bg-\[\#071b33\] { background-color: var(--navy) !important; }
+.bg-\[\#0b2948\], .bg-\[\#0d2d4f\] { background-color: var(--navy-2) !important; }
+.text-\[\#071b33\], .text-\[\#142033\] { color: var(--ink) !important; }
+.text-\[\#d5a84b\], .text-\[\#e5c27d\], .text-\[\#e2bd70\] { color: var(--gold) !important; }
+.bg-\[\#d5a84b\] { background-color: var(--gold) !important; }
+.bg-\[\#f8f6f0\], .bg-\[\#f0eadc\] { background-color: var(--cream) !important; }
 
 @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
 .animate-float { animation: float 5s ease-in-out infinite; }
