@@ -45,6 +45,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .bg-\[\#d5a84b\] { background-color: var(--gold) !important; }
 .bg-\[\#f8f6f0\], .bg-\[\#f0eadc\] { background-color: var(--cream) !important; }
 
+/* More compact page rhythm without shrinking content or cards. */
+.py-24 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+.py-20 { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+@media (min-width: 1024px) {
+  .lg\:py-32 { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+  .lg\:py-28 { padding-top: 4.5rem !important; padding-bottom: 4.5rem !important; }
+  .lg\:min-h-\[780px\] { min-height: 680px !important; }
+}
+
 @keyframes float { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
 .animate-float { animation: float 5s ease-in-out infinite; }
 
