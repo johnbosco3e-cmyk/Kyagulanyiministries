@@ -9,6 +9,8 @@ import { news, programs, projects, stats } from '@/lib/content';
 export default function Home() {
   return <main>
     <section className="relative min-h-[720px] overflow-hidden bg-[#071b33] text-white lg:min-h-[780px]">
+      <Image src="/pictures/unnamed (27).webp" alt="Kyagulanyi Ministries serving communities" fill priority className="object-cover" sizes="100vw" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#071b33]/95 via-[#071b33]/70 to-[#071b33]/25" />
       <div className="container-site relative flex min-h-[720px] items-center py-24 lg:min-h-[780px]">
         <Reveal className="relative z-10 max-w-4xl"><p className="text-xs font-semibold uppercase tracking-[.3em] text-[#afd000] sm:text-sm">Kyagulanyi Ministries</p><h1 className="mt-6 font-serif text-6xl font-semibold leading-[.95] text-white sm:text-7xl lg:text-[104px]">Saving lives.<br/><em className="font-normal text-[#afd000]">Planting hope.</em></h1><p className="mt-8 text-lg tracking-wide text-white/80 sm:text-xl">Building through faith.</p><div className="mt-10 h-px w-24 bg-[#afd000]"/></Reveal>
       </div>
