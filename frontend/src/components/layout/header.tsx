@@ -20,13 +20,13 @@ export function Header() {
   useEffect(() => { const fn = () => setScrolled(scrollY > 24); fn(); addEventListener('scroll', fn); return () => removeEventListener('scroll', fn); }, []);
   useEffect(() => setOpen(false), [pathname]);
   return <>
-    <div className={cn('hidden bg-[#071b33] text-white lg:block', pathname === '/' && 'lg:hidden')}>
+    <div className="hidden bg-[#071b33] text-white lg:block">
       <div className="container-site flex h-9 items-center justify-between text-[11px] font-semibold tracking-wide text-white/75">
         <span>Transforming lives. Building communities. Empowering the future.</span>
         <div className="flex gap-6"><Link href="/prayer-request">Prayer Request</Link><Link href="/reports">Reports & Transparency</Link><span>Kampala, Uganda</span></div>
       </div>
     </div>
-    <header className={cn('sticky top-0 z-50 border-b transition-all duration-300', pathname === '/' && !scrolled ? 'absolute inset-x-0 border-white/10 bg-transparent text-white' : scrolled ? 'border-white/10 bg-[#0d2133]/95 shadow-sm backdrop-blur-xl' : 'border-white/10 bg-[#0d2133]')}>
+    <header className={cn('sticky top-0 z-50 border-b transition-all duration-300', scrolled ? 'border-white/10 bg-[#0d2133]/95 shadow-sm backdrop-blur-xl' : 'border-white/10 bg-[#0d2133]')}>
       <div className="container-site flex h-[78px] items-center justify-between gap-6">
         <Link href="/" className="focus-ring flex items-center gap-3 rounded-sm" aria-label="Kyagulanyi Ministries home">
           <span className="flex h-14 w-[145px] items-center sm:h-16 sm:w-[205px]"><Image src="/kyagulanyi-logo.webp" alt="Kyagulanyi Ministries" width={220} height={135} priority className="h-full w-full object-contain" /></span>
