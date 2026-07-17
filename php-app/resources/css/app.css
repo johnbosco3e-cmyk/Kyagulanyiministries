@@ -1,0 +1,12 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+:root{--green:#3fad3c;--deep:#075b3a}body{font-family:Arial,sans-serif}.site-nav{background:var(--deep);padding:1rem 0}.btn-brand{background:var(--green);border-color:var(--green);color:#fff;font-weight:700}.hero{min-height:75vh;background:linear-gradient(90deg,rgba(7,91,58,.96),rgba(7,91,58,.55)),url('/hero.jpg') center/cover;color:#fff}.section-padding{padding:6rem 0}.eyebrow{color:var(--green);font-size:.75rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.info-card,.card{border:1px solid #dce8df;border-radius:1rem}.cta-section{background:var(--deep);padding:4rem 0}.site-footer{background:#052d1d;color:#fff;padding:2rem 0}
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
